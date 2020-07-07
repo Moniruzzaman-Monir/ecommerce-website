@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css?family=Calligraffitti|Mali");
+/* GENERAL STYLES */
+:root {
+  --mainYellow: #fdbe02;
+  --mainWhite: #fff;
+  --mainBlack: #071013;
+  --mainGrey: #9b9999;
+  --TransGrey: rgba(0, 0, 0, 0.1);
+}
+body {
+  color: var(--mainBlack);
+  background: var(--mainWhite);
+  font-family: "Mali", cursive;
+}
+.text-slanted {
+  font-family: "Calligraffitti", cursive;
+}
+.btn-yellow{
+  background: var(--mainYellow); text-transform: capitalize;
+  font-size: 20px; color: var(--mainBlack); border-radius: 0;
+}
+.btn-yellow:hover{
+  background: var(--mainBlack); color: var(--mainYellow);
+}
+/*==================================
+              Navbar
+==================================  */
+.navbar-toggler{
+  outline: none !important; border: none;
+  font-size: 35px; color: var(--mainYellow) !important;
+}
+.nav-link{
+  font-size: 25px; border-bottom: 2px solid var(--mainWhite);
+}
+.nav-active{
+  font-size: 25px; border-bottom: 2px solid var(--mainYellow);
+}
+.navbar-icons{
+  font-size: 25px;
+}
+.navbar-cart-icon{
+  color: var(--mainBlack); position: relative;
+}
+.navbar-cart-icon:hover{
+  color: var(--mainGrey );
+}
+.cart-items{
+  color: var(--mainWhite); background-color: var(--mainYellow);
+  position: absolute; top: -15%; right: -25%; font-size: 6px;
+  padding: 3px 6px; border-radius: 50%;
+}
+/*==================================
+              Banner
+==================================  */
+.banner{
+  min-height: calc(100vh - 110px);
+  background-image: url("../img/pageBcg/bannerBcg.jpeg");
+  background-repeat: no-repeat; background-size: cover;
+  background-position: center; background-attachment: fixed;
+}
+/*==================================
+           Featured Section
+==================================  */
+.featured-container{
+  background: var(--TransGrey); position: relative;
+  overflow: hidden;
+}
+.featured-search-icon{
+  background: var(--mainWhite);display: inline-block;
+  padding: 5px; position: absolute;right: 0; top: 50%;
+  font-size: 20px; transform: translateX(110%);
+  transition: all 1s ease-in-out;
+}
+.featured-container:hover .featured-search-icon{
+  transform: translateX(0%);
+}
+.featured-store-link{
+  background: var(--mainYellow);color: var(--mainBlack);
+  padding: 3px 5px; position: absolute;right: 0; top: 70%;
+  transform: translateX(110%); transition: all 1s ease-in-out;
+}
+.featured-container:hover .featured-store-link{
+  transform: translateX(0%);
+}
+.featured-store-link:hover{
+  color: var(--mainBlack);
+}
+.old-price{
+  text-decoration: line-through;
+}
+/*==================================
+           Partner
+==================================  */
+.Partners {
+  background: var(--TransGrey);
+}
+.carousel-control-prev{
+  font-size: 40px; color: var(--mainBlack);
+  transform: translateX(-200%);
+}
+.carousel-control-next{
+  font-size: 40px; color: var(--mainBlack);
+  transform: translateX(200%);
+}
+
+
+
+
+
+
+
+
+
